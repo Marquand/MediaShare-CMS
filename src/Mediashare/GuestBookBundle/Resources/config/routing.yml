@@ -1,0 +1,8 @@
+mediashare_guest_book_admin:
+    resource: "@MediashareGuestBookBundle/Resources/config/routing/admin_guestbook.yml"
+    prefix:   /admin/guestbook
+
+
+mediashare_guest_book:
+    resource: "@MediashareGuestBookBundle/Resources/config/routing/guestbook.yml"
+    prefix:   /guestbook

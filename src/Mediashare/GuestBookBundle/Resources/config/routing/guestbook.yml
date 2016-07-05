@@ -1,0 +1,8 @@
+guestbook:
+    path:     /
+    defaults: { _controller: "MediashareGuestBookBundle:Default:index" }
+
+guestbook_create:
+    path:     /create
+    defaults: { _controller: "MediashareGuestBookBundle:Default:create" }
+    methods:  POST

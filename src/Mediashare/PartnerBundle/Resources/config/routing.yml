@@ -1,0 +1,7 @@
+mediashare_partner_admin:
+    resource: "@MediasharePartnerBundle/Resources/config/routing/admin_partner.yml"
+    prefix:   /admin/partner
+
+mediashare_partner:
+    resource: "@MediasharePartnerBundle/Resources/config/routing/partner.yml"
+    prefix:   /partner

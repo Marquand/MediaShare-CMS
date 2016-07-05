@@ -1,0 +1,36 @@
+admin_partner:
+    path:     /{page}/list
+    defaults:
+        _controller: "MediasharePartnerBundle:Partner:index"
+        page: 1
+
+admin_partner_show:
+    path:     /{id}/show
+    defaults: { _controller: "MediasharePartnerBundle:Partner:show" }
+
+admin_partner_new:
+    path:     /new
+    defaults: { _controller: "MediasharePartnerBundle:Partner:new" }
+
+admin_partner_create:
+    path:     /create
+    defaults: { _controller: "MediasharePartnerBundle:Partner:create" }
+    methods:  POST
+
+admin_partner_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MediasharePartnerBundle:Partner:edit" }
+
+admin_partner_update:
+    path:     /{id}/update
+    defaults: { _controller: "MediasharePartnerBundle:Partner:update" }
+    methods:  [POST, PUT]
+
+admin_partner_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MediasharePartnerBundle:Partner:delete" }
+    methods:  [POST, DELETE]
+
+admin_partner_sort:
+    path:     /{id}/sort
+    defaults: { _controller: "MediasharePartnerBundle:Partner:sort" }

@@ -1,0 +1,34 @@
+admin_guestbook:
+    path:     /
+    defaults: { _controller: "MediashareGuestBookBundle:GuestBook:index" }
+
+admin_guestbook_show:
+    path:     /{id}/show
+    defaults: { _controller: "MediashareGuestBookBundle:GuestBook:show" }
+
+admin_guestbook_new:
+    path:     /new
+    defaults: { _controller: "MediashareGuestBookBundle:GuestBook:new" }
+
+admin_guestbook_create:
+    path:     /create
+    defaults: { _controller: "MediashareGuestBookBundle:GuestBook:create" }
+    methods:  POST
+
+admin_guestbook_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MediashareGuestBookBundle:GuestBook:edit" }
+
+admin_guestbook_update:
+    path:     /{id}/update
+    defaults: { _controller: "MediashareGuestBookBundle:GuestBook:update" }
+    methods:  [POST, PUT]
+
+admin_guestbook_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MediashareGuestBookBundle:GuestBook:delete" }
+    methods:  [POST, DELETE]
+
+admin_guestbook_sort:
+    path:     /{id}/sort
+    defaults: { _controller: "MediashareGuestBookBundle:GuestBook:sort" }

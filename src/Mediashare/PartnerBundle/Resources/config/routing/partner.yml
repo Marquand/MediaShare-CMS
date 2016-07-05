@@ -1,0 +1,7 @@
+partner:
+    path:     /
+    defaults: { _controller: MediasharePartnerBundle:Default:index }
+
+partner_show:
+    path:     /{id}/show
+    defaults: { _controller: MediasharePartnerBundle:Default:show }
